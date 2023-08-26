@@ -1,0 +1,34 @@
+{
+  "name": "fastify-vault-secrets",
+  "version": "1.0.0",
+  "description": "A fastify plugin to fetch secrets from vault at boot and add parse them into process.env",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "keywords": [
+    "secrets",
+    "vault",
+    "fastify",
+    "plugin"
+  ],
+  "author": "Mauricio Mercado",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "dotenv": "^16.3.1",
+    "fastify-plugin": "^4.5.1",
+    "got": "^13.0.0",
+    "yoctocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "fastify": "^4.21.0",
+    "nock": "^13.3.3",
+    "snazzy": "^9.0.0",
+    "standard": "^17.1.0",
+    "tap": "^16.3.8"
+  }
+}
