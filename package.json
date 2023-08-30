@@ -27,8 +27,7 @@
     "debug": "^4.3.4",
     "dotenv": "^16.3.1",
     "fastify-plugin": "^4.5.1",
-    "got": "^13.0.0",
-    "yoctocolors": "^1.0.0"
+    "got": "^13.0.0"
   },
   "devDependencies": {
     "fastify": "^4.21.0",
