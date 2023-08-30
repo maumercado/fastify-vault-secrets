@@ -4,6 +4,12 @@
   "description": "A fastify plugin to fetch secrets from vault at boot and add parse them into process.env",
   "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "standard | snazzy",

@@ -26,8 +26,7 @@ async function env (_, options) {
   const __filename = fileURLToPath(import.meta.url)
   const root = path.dirname(__filename)
 
-  const possiblePaths = options.path ? path.resolve(path.join(options.path, '.env')) : path.resolve(path.join(root, '../', '.env'))
-  console.log(possiblePaths)
+  const possiblePaths = options.path ? path.resolve(path.join(root, options.path, '.env')) : path.resolve(path.join(root, '.env'))
   assert(exists(possiblePaths), 'No .env file found')
 
   const vars = dotenv.config({
