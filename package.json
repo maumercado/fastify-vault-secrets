@@ -1,15 +1,16 @@
 {
-  "name": "fastify-vault-secrets",
-  "version": "1.0.0",
+  "name": "@maumercado/fastify-vault-secrets",
+  "version": "0.0.9",
   "description": "A fastify plugin to fetch secrets from vault at boot and add parse them into process.env",
   "type": "module",
   "main": "index.js",
   "engines": {
     "node": ">=20"
   },
-  "directories": {
-    "lib": "lib"
-  },
+  "files": [
+    "index.js",
+    "lib/**/*.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "standard | snazzy",
@@ -35,5 +36,13 @@
     "snazzy": "^9.0.0",
     "standard": "^17.1.0",
     "tap": "^16.3.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maumercado/fastify-vault-secrets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maumercado/fastify-vault-secrets/issues"
+  },
+  "homepage": "https://github.com/maumercado/fastify-vault-secrets#readme"
 }
