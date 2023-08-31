@@ -1,6 +1,6 @@
 {
   "name": "@maumercado/fastify-vault-secrets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fastify plugin to fetch secrets from vault at boot and add parse them into process.env",
   "type": "module",
   "main": "index.js",
