@@ -23,7 +23,8 @@ async function resolveSecrets (vars, writeIntoEnv) {
 
 async function env (_, options) {
   const root = process.cwd()
-  const possiblePaths = options.path ? path.resolve(path.join(root, options.path, '.env')) : path.resolve(path.join(root, '.env'))
+  const name = options.filename || '.env'
+  const possiblePaths = options.path ? path.resolve(path.join(root, options.path, name)) : path.resolve(path.join(root, name))
   assert(exists(possiblePaths), 'No .env file found')
 
   const vars = dotenv.config({
